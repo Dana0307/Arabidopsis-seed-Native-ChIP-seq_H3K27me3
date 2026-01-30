@@ -11,7 +11,7 @@
 
  -[MACS3](https://macs3-project.github.io/MACS/) #用来call peak
 
- -[bedtools](https://plink.readthedocs.io/en/latest/bedtools_int/)
+ -[Bedtools](https://plink.readthedocs.io/en/latest/bedtools_int/) #peak 注释
 
 
 # Step 2 prepare the Arabidopsis genome file
@@ -110,7 +110,7 @@ cat ./callpeak/file_peaks.broadPeak |awk '{if((($3-$2) > 200) && ($7 > 3) && ($9
 ```
 
 ## 3.8 peak 注释 （以H3K27me3 为例）
- peak注释，可以用bedtools注释，根据overlap信息简单粗暴非常适合K27这种定位在gene body区域的信号
+ peak注释，可以用`Bedtools`注释，根据overlap信息简单粗暴非常适合K27这种定位在gene body区域的信号
  可以自己设置overlap的条件，可以调整的地方也很多
  这里是我种子里面设置的条件：peak和gene overlap的长度 > 100bp
  或者peak和gene overlap的长度站peak或者基因的50%
