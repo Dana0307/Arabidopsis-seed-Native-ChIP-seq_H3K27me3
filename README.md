@@ -1,4 +1,4 @@
-# Step 1 install the following software
+# Step 1 Install the following software
  -[fastp](https://github.com/OpenGene/fastp) v0.20.0 # 去接头以及数据过滤
 
  -[Bowtie2](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml) v2.3.4.3  # 基因组比对
@@ -14,8 +14,8 @@
  -[Bedtools](https://plink.readthedocs.io/en/latest/bedtools_int/) #peak 注释
 
 
-# Step 2 prepare the Arabidopsis genome file
-  义访已经创建好，放在服务器共用地址 (/data/genome_data/TAIR10_Tan/bowtie2_index/TAIR10)，可以直接用。如果是共用没有的可以自己建，详见`bowtie2`教程 (如何创建的步骤待更新)
+# Step 2 Prepare the Arabidopsis genome file
+  义访已经创建好，放在服务器公用地址 (/data/genome_data/TAIR10_Tan/bowtie2_index/TAIR10)，可以直接用。如果是公用没有的可以自己建，详见`bowtie2`教程 (如何创建的步骤待更新)
 
 # Step 3 Run the following pipeline 
 
