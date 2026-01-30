@@ -7,13 +7,15 @@
 
  -[sambamba](https://lomereiter.github.io/sambamba/) v1.0.1  # 去重合排序 samtools也可以做 但是这个比较快
 
- -[deeptools](https://deeptools.readthedocs.io/en/latest/) v3.5.6 # 数据可视化，区间计数等
- -[bedtools]
+ -[deepTools](https://deeptools.readthedocs.io/en/latest/) v3.5.6 # 数据可视化，区间计数等
 
- -[MACS3]
+ -[MACS3](https://macs3-project.github.io/MACS/) #用来call peak
+
+ -[bedtools](https://plink.readthedocs.io/en/latest/bedtools_int/)
+
 
 # Step 2 prepare the Arabidopsis genome file
-  义访已经创建好，放在服务器共用地址 (/data/genome_data/TAIR10_Tan/bowtie2_index/TAIR10)，可以直接用。如果是共用没有的可以自己建，详见`bowtie2`教程 (待更新)
+  义访已经创建好，放在服务器共用地址 (/data/genome_data/TAIR10_Tan/bowtie2_index/TAIR10)，可以直接用。如果是共用没有的可以自己建，详见`bowtie2`教程 (如何创建的步骤待更新)
 
 # Step 3 Run the following pipeline 
 
@@ -81,7 +83,7 @@ bamCoverage -p 64 -bs 10 --extendReads --normalizeUsing RPGC \
 -o ./file_dedup.bw
 ```
 ## 3.6 MACS3
-  call peak现在最多的MACS2或者MACS3，我用的是3
+  call peak 现在用的最多的还是MACS2或者MACS3，义访用的是MACS3
   H3K27me3一般用broad模式，需要指定--broad-cutoff 0.05
   --max-gap 50 是一个经验值，需要根据不同样本K27的特征去设定
 ```
