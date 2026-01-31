@@ -15,7 +15,7 @@
 
 
 # Step 2 Prepare the Arabidopsis genome file
-  义访已经创建好，放在服务器公用地址 (/data/genome_data/TAIR10_Tan/bowtie2_index/TAIR10)，可以直接用。如果是公用没有的可以自己建，详见`bowtie2`教程 (如何创建的步骤待更新)
+  义访已经创建好，放在服务器公用地址 (/data/genome_data/TAIR10_Tan/bowtie2_index/TAIR10)，可以直接用。如果是公用没有的可以自己建，详见`bowtie2`教程 (或直接从`miscfiles`中下载)
   用bowtie2建立索引 需要基因组的fa文件，例如TAIR10.fa
   一般需要两个参数，第一个是fa文件的地址，第二个是存放索引文件的地址,后面输出的是一个文件夹，后面用的时候也是这个文件夹的名字
 
